@@ -262,7 +262,7 @@
             <table>
                 <tr>
                     <td> <img class="avatar" src="<?= base_url('images/img_avatar.png') ?>"></td>
-                    <td> ANJIANG TAK TUNTUANG</td>
+                    <td> name</td>
                 </tr>
                 <tr>
                     <td><a class="chgpass" onclick="location.href='<?= site_url('login/chgpass'); ?>'" style="text-align: right;">Change Password</a></td>

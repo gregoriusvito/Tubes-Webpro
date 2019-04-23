@@ -45,6 +45,7 @@ class Login extends CI_Controller
         // $this->session->userdata('email')])->row_array();
         // echo $data['user']['password'];
         if (md5($pass) == ($user['password'])) {
+            session_start();
             redirect('login/getmessage');
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
@@ -177,9 +178,9 @@ class Login extends CI_Controller
     }
     public function viewSent()
     { }
-    public function logOut()
+    public function logout()
     {
         $this->session->sess__destroy();
-        redirect('login');
+        redirect('login/index');
     }
 }

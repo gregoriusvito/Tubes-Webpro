@@ -5,6 +5,8 @@
     <title>Compose</title>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('bootstrap/css/bootstrap.min.css') ?>">
+    <script href="<?= base_url('bootstrap/js/bootstrap.min.js') ?>"></script>
 </head>
 
 <body>

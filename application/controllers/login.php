@@ -89,6 +89,13 @@ class Login extends CI_Controller
         $data["mail"] = $sql->result_array();
         $this->load->view('main/default', $data);
     }
+    public function getName()
+    {
+        $email = $_SESSION["email"];
+        $sql = $this->db->query("Select name from user where email = '$email'");
+        $name = $sql->result_array();
+        $this->load->view('main/default', $name);
+    }
     public function main()
     {
         $data['mail'] = $this->db->get_where('mail', ['receiver' =>

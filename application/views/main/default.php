@@ -271,8 +271,7 @@
                     <td><a onclick="location.href='<?= site_url('login/logout'); ?>'"><button class="logout">LOGOUT</button></a></td>
                 </tr>
                 <tr>
-                    <td><a onclick="location.href='<?= site_url('login/delacc'); ?>'"><u> Delete Account</u></a> </td>
-                    <td></td>
+                    <td><a style="cursor: pointer;" onclick="location.href='<?= site_url('login/delacc'); ?>'"><u> Delete Account</u></a> </td>
                 </tr>
             </table>
         </div>

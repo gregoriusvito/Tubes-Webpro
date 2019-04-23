@@ -28,7 +28,7 @@
             </div>
             <input type="submit" class="btn">
         </form>
-        <button class="btn" onclick="location.href='<?= site_url('login/main'); ?>'">Home</button>
+        <button class="btn" onclick="location.href='<?= site_url('login/getmessage'); ?>'">Home</button>
     </div>
 
     <style>

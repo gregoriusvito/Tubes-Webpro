@@ -5,7 +5,7 @@
     <link rel="icon" href="logo_head.png" type="image/gif">
     <link rel="stylesheet" type="text/css" href="<?= base_url('bootstrap/css/bootstrap.min.css') ?>">
     <script href="<?= base_url('bootstrap/js/bootstrap.min.js') ?>"></script>
-    <title>Sent Mail</title>
+    <title>Inbox</title>
     <style>
         body {
             font-family: "Lato", sans-serif;

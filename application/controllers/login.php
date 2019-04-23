@@ -188,4 +188,13 @@ class Login extends CI_Controller
         $this->session->sess_destroy();
         redirect('login/index');
     }
+
+    public function delacc()
+    {
+        $email = $this->session->userdata('email');
+        $sql = "Delete from user
+        where email = '" . $email . "'";
+        $this->db->query($sql);
+        redirect('login');
+    }
 }

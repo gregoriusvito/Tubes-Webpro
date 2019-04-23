@@ -270,17 +270,13 @@
                     <td><a class="chgpass" onclick="location.href='<?= site_url('login/chgpass'); ?>'" style="text-align: right;">Change Password</a></td>
                     <td><a onclick="location.href='<?= site_url('login/logout'); ?>'"><button class="logout">LOGOUT</button></a></td>
                 </tr>
-                <tr>
-                    <td><a onclick=""><u> Delete Account</u></a> </td>
-                    <td></td>
-                </tr>
             </table>
         </div>
 
         <table bgcolor="#edeeef" id="output_div" method="post">
             <tr>
                 <?php foreach ($mail as $m) : ?>
-                    <td name="from" class="from" width='10%'><?= $m['sender'] ?></td>
+                    <td name="from" class="from" width='10%'><?= $m['receiver'] ?></td>
                     <td name="text" class="inbox" width='100%'><?= $m['text'] ?> </td>
                 </tr>
             <?php endforeach ?>

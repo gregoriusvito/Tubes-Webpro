@@ -177,7 +177,12 @@ class Login extends CI_Controller
         }
     }
     public function viewSent()
-    { }
+    {
+        $email = $_SESSION["email"];
+        $sql = $this->db->query("Select * from mail where sender = '$email'");
+        $data["mail"] = $sql->result_array();
+        $this->load->view('main/sentmail', $data);
+    }
     public function logout()
     {
         $this->session->sess_destroy();

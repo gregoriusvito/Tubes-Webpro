@@ -1,0 +1,72 @@
+body {
+	margin: 0;
+}
+
+.container{
+	width: : 250px;
+	height: 500px;
+	padding: 1px 0px 80px 0px;
+	margin: 30px 700px;
+	text-align: center;
+	background-color: white;
+	border-radius: 8px;
+	border-width:230;
+	border: 1px solid;
+	border-color: #e8ebef;
+	margin-top: 12%;
+}
+.container img{
+	width: 190px;
+	height: 125px;
+	margin-top: 60px;
+	margin-bottom: 45px;
+}
+
+input[type="text"]{
+	height: 50px;
+	width: 350px;
+	font-family: calibri;
+	font-size: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+	padding-left: 20px;
+}
+input[type="submit"]{
+	font-family: calibri;
+	font-size: 20px;
+}
+.container > .a1 ,.a2{
+	text-align: left;
+	font-family:tahoma;
+	text-decoration:none;
+}
+
+/*form-input:before{
+	background: url(logo1.png);
+}*/
+.a1{
+	font-family: calibri;
+}
+.btn-login{
+	padding: 8px 25px;
+	font-size: 17px;
+	display: inline-block;
+	color: white;
+	background-color: #0066ff;
+	border: none;
+	border-radius: 4px;
+}
+a+input{
+	font-family: calibri;
+	margin-left: 120px;
+}
+a+a{
+
+	margin-left: 225px;
+}
+
+td{
+	font-family: calibri;
+	margin-left: 10px;
+	font-size: 15px;
+}

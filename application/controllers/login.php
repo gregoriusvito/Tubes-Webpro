@@ -177,4 +177,9 @@ class Login extends CI_Controller
     }
     public function viewSent()
     { }
+    public function logOut()
+    {
+        $this->session->sess__destroy();
+        redirect('login');
+    }
 }

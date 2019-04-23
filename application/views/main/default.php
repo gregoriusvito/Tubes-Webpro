@@ -266,7 +266,7 @@
                 </tr>
                 <tr>
                     <td><a class="chgpass" onclick="location.href='<?= site_url('login/chgpass'); ?>'" style="text-align: right;">Change Password</a></td>
-                    <td><button class="logout">LOGOUT</button></td>
+                    <td><button class="logout" action='<?= site_url('login/logout') ?>'>LOGOUT</button></td>
                 </tr>
             </table>
         </div>

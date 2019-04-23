@@ -270,6 +270,9 @@
                     <td><a class="chgpass" onclick="location.href='<?= site_url('login/chgpass'); ?>'" style="text-align: right;">Change Password</a></td>
                     <td><a onclick="location.href='<?= site_url('login/logout'); ?>'"><button class="logout">LOGOUT</button></a></td>
                 </tr>
+                <tr>
+                    <td><a onclick=""><u> Delete Account</u></a> </td> <td></td>
+                </tr>
             </table>
         </div>
 

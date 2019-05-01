@@ -33,15 +33,16 @@
         }
 
         .container {
-            /* width: : 100%; */
-            height: 550px;
-            padding: 0px 0px 0px 0px;
+             width: : 100%; 
+            /*height: 550px;*/
+            /*padding: 0px 0px 0px 0px;*/
             text-align: center;
-            background-color: white;
+            /*background-color: white;*/
             border-radius: 8px;
             /* border-width: 150px; */
-            border: 1px solid black;
+            /*border: 1px solid black;*/
             margin-top: 10%;
+            /*margin-left: 50;*/
             /* margin: 50%; */
         }
 

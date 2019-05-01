@@ -180,8 +180,11 @@
             height: 150px;
             width: 340px;
             display: none;
-            float: right;
-            border: 1.5px solid #f2f3f4;
+            background: white;
+            /*float:  right;*/
+            border: 0.5px solid #f2f3f4;
+            position: absolute;
+            right: 0px;
         }
 
         .avatar {
@@ -191,7 +194,7 @@
         }
 
         .popAvat table {
-            padding: 15px;
+            /*padding: 15px;*/
         }
 
         .logout {
@@ -262,6 +265,9 @@
 
         <div class="popAvat" id="popAvat">
             <table>
+                <!-- <tr>
+                    <td> 1 </td> <td> </td> <td> </td>
+                </tr> -->
                 <tr>
                     <td> <img class="avatar" src="<?= base_url('images/img_avatar.png') ?>"></td>
                     <td> name</td>
@@ -291,7 +297,7 @@
         var y = 1;
         var isi = "";
         var outputHTML = "";
-
+n 
         function openNav() {
 
             if (x == 1) {

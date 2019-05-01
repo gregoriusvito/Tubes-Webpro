@@ -57,7 +57,7 @@
             background-color: white;
             border-radius: 8px;
             border-width: 230;
-            border: 1px solid black;
+            /*border: 1px solid black;*/
             margin-top: 10%;
         }
 

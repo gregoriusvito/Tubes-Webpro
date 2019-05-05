@@ -101,7 +101,7 @@
             width: 18;
             position: fixed;
             z-index: 1;
-            top: 82.5px;
+            top: 75px;
             left: 18;
             background-color: white;
             overflow-x: hidden;
@@ -142,17 +142,30 @@
             vertical-align: middle;
         }
 
-        #output_div {
-            border: 0.5px;
-            border-top: 0.5px solid #edeeef;
-            border-bottom: 0.5px solid #edeeef;
-            border-collapse: separate;
-            border-spacing: 10px;
-            padding-left: 10px;
+        .output_div {
+            /*border: 0.5px;*/
+            /*border-top: 0.5px solid black;
+            border-bottom: 1px solid black;*/
+            border-collapse:separate; 
+            border-spacing:0 10px;
+            /*border-collapse: separate;*/
+            /*border-spacing: 10px;*/
+            padding-left: 15px;
             padding-top: 5px;
             padding-bottom: 5px;
+            
             margin-left: 60px;
             width: 100%;
+        }
+        .deleteMsg:hover{
+            height: 20px;
+            width: 20px;
+            /*left: 5;*/
+        }
+        .deleteMsg{
+            height: 15px;
+            width: 15px;
+            /*left: 5;*/
         }
 
         .from {
@@ -282,11 +295,13 @@
             </table>
         </div>
 
-        <table bgcolor="#edeeef" id="output_div" method="post">
-            <tr>
-                <?php foreach ($mail as $m) : ?>
-                    <td name="from" class="from" width='10%'><?= $m['sender'] ?></td>
-                    <td name="text" class="inbox" width='100%'><?= $m['text'] ?> </td>
+        <table bgcolor="#edeeef" class="output_div" method="post">
+            <?php foreach ($mail as $m) : ?>
+            <tr >     
+                    <td  width='3%'><input type="checkbox" name="deleteMsg"> </td>
+                    <td name="from" class="from" width='12%'><?= $m['sender'] ?></td>
+                    <td name="text" class="inbox" width='80%'><?= $m['text'] ?> </td>
+                    <td name="deleteMsg" width='7%' style="cursor: pointer;"><img onclick="" class="deleteMsg" src="<?= base_url('images/deleteMsg.png') ?>"></td>
                 </tr>
             <?php endforeach ?>
         </table>

@@ -40,6 +40,11 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        /*a.active{
+            color: white;
+            font-size: 100px;
+        }*/
+
         .topnav {
             overflow: hidden;
             background-color: #333;
